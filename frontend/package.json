@@ -38,7 +38,8 @@
     "vue-youtube": "^1.4.0",
     "vuetify": "^2.3.4",
     "wavesurfer.js": "^5.0.1",
-    "yarn": "^1.22.4"
+    "yarn": "^1.22.4",
+    "@mdi/font":"5.9.55"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.12",
@@ -70,6 +71,7 @@
     "raw-loader": "^4.0.2",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
-    "vue-jest": "^3.0.6"
+    "vue-jest": "^3.0.6",
+    "@mdi/font":"5.9.55"
   }
 }
