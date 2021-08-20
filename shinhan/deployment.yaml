@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shinhan-doccano
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: shinhan-doccano
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: shinhan-doccano
+    spec:
+      containers:
+      - name: shinhan-doccano
+        image: skaghzz/shinhan-doccano:0.0.1
+        imagePullPolicy: IfNotPresent
+        ports:
+          - containerPort: 8000
+        env:
+        - name: ADMIN_USERNAME
+          value: "admin"
+        - name: ADMIN_PASSWORD
+          value: "1234"
+        - name: ADMIN_EMAIL
+          value: "admin@example.com"
+        - name: RABBITMQ_DEFAULT_USER
+          value: "doccano"
+        - name: RABBITMQ_DEFAULT_PASS
+          value: "doccano"
+        - name: POSTGRES_USER
+          value: "doccano"
+        - name: POSTGRES_PASSWORD
+          value: "doccano"
+        - name: POSTGRES_DB
+          value: "doccano"
