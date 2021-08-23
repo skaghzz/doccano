@@ -43,7 +43,7 @@ export default {
   ** Global CSS
   */
   css: [
-    '@mdi/font/css/materialdesignicons.css'
+    '@mdi/font/css/materialdesignicons.min.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -121,8 +121,7 @@ export default {
           error: '#FF5252'
         }
       }
-    }
-    ,
+    } ,
     defaultAssets: {
       icons: false
     },

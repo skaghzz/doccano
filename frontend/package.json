@@ -39,6 +39,7 @@
     "vuetify": "^2.3.4",
     "wavesurfer.js": "^5.0.1",
     "yarn": "^1.22.4",
+    "@mdi/js":"5.9.55",
     "@mdi/font":"5.9.55"
   },
   "devDependencies": {
@@ -72,6 +73,7 @@
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
     "vue-jest": "^3.0.6",
+    "@mdi/js":"5.9.55",
     "@mdi/font":"5.9.55"
   }
 }
